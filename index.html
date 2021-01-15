@@ -4,7 +4,18 @@
         <script src="index.js" defer></script>
     </head>
     <body>
-        <table>
+        <div class="topcontainer">
+            <img src="images/noke shoes.jpg" alt="nike shoes" id="shoeimage" class="center">
+            <h1 id="title">Nike Air Max Shoes</h1>
+            <h4 id="productdescription">High Quality Footwear. Made with the best material<h4>
+            <div>
+                <h4 id="averageLable">Average Rating: </h4>
+            </div>
+
+        </div>
+        <br/>
+        <hr>
+        <table id="reviewtable">
             <tr>
                 <td><input type="text" id="name" width="100%" placeholder="Name"></td>
             </tr>
@@ -16,13 +27,22 @@
             <tr>
                 <td>
                     Rating:
+                    <select>
+                        <option id="1star">1 Star &#9733</option>
+                        <option id="2star">2 Star &#9733 &#9733</option>
+                        <option id="3star">3 Star &#9733 &#9733 &#9733</option>
+                        <option id="4star">4 Star &#9733 &#9733 &#9733 &#9733</option>
+                        <option id="5star">5 Star &#9733 &#9733 &#9733 &#9733 &#9733</option>   
+                    </select>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <button id="reviewBtn">Submit Review</button>
+                    <br/>
+                    <button id="submitbtn">Submit Review</button>
                 </td>
             </tr>
         </table>
+        <hr>
     </body>
 </html>

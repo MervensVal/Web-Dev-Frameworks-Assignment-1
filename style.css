@@ -2,3 +2,36 @@
     line-height: 20px;
     width: 300px;
 }
+#shoeimage{
+    width: 250px;
+    height: 150px;
+    margin-right: 5px;
+}
+#title{
+    color:#4169E1;
+    font-family: Verdana, sans-serif;
+    font-size: 25px;
+}
+
+.topcontainer{
+    text-align: center;
+}
+#reviewtable{
+    margin-left: auto;
+    margin-right: auto;
+}
+#productdescription{
+    color:#4169E1;
+    font-family: Verdana, sans-serif;
+    font-style: italic;
+}
+
+#submitbtn{
+    background-color: #4CFF33;
+    border-radius: 5px;
+    height: 40px;
+}
+#averageLable{
+    color:#4169E1;
+    font-family: Verdana, sans-serif;
+}
