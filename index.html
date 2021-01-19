@@ -4,55 +4,57 @@
         <script src=".dist/index.js" defer></script>
     </head>
     <body>
-
-
         <template id="template">
-            <table id='outputreviewtable' width="100%">
-                <tr>
-                    <td>Name: <span id="outputname"></span> </td>
-                </tr>
-                <tr>
-                    <td>Comment: <span id="outputcomment"></span></td>
-                </tr>
-                <tr>
-                    <td>Rating: <span id="outputrating"></span></td>
-                </tr>
-            </table>
-                <hr>
+            <div class="bold">Name:</div> <span id="outputname" ></span> 
+            <div class="bold">Comment:</div> <span id="outputcomment" ></span>
+            <div class="bold">Rating:</div> <span id="outputrating" ></span>
+            <div class="bold">Date Comment Posted:</div> <span id="currentdate"></span>
+            <hr>
         </template>
-
-
-        <div class="topcontainer">
-            <img src="images/noke shoes.jpg" alt="nike shoes" id="shoeimage">
-            <h1 id="title">Nike Air Max Shoes</h1>
-            <p id="productdescription">
-                High Quality Footwear. Made with the best material.<br/>
-                Includes shock absorption technology and is designed<br/>
-                to be used for almost any sport.
-            </p>
-            <div>
-                <h4 id="averageLable">Average Rating: <span id="average"></h4>
-            </div>
-        </div>
-
-
         <br/>
-        <hr>
-        <table id="reviewtable" width="100%">
+        <table id="reviewtable" width="50%">
+        <tr>
+            <td>
+                <h1 id="title">Nike Air Max Shoes</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="images/noke shoes.jpg" alt="nike shoes" id="shoeimage">
+                <small>Image Source: unsplash.com </small>
+                <small>Photograper: Hermes Rivera</small>
+            </td>
+            <td>
+                <p id="productdescription">
+                    High Quality Footwear. Made with the best material.
+                    Includes shock absorption technology and is designed
+                    to be used for almost any sport. Number 1 recommended shoes.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <h4 id="averageLable">Average Rating: <span id="average"></h4>
+                </div>
+            </td>
+        </tr>
             <tr>
+                <small id="blankfielderror"></small>
                 <td>Name: </br>
-                <input type="text" id="reviewername" width="100%"></td>
+                <input type="text" id="reviewername" width="100%" maxlength="30"></td>
             </tr>
             <tr>
                 <td>
                     Comment: <br/>
-                    <input type="text" id="comment" width="100%"></td>
+                    <input type="text" id="comment" width="100%" maxlength="30"></td>
                 </td>
             </tr>
             <tr>
                 <td>
                     Rating: <br/>
                     <input type="number" id="rating" min="1" max="5">
+                    <small id="ratingerror"><small>
                 </td>
             </tr>
             <tr>
@@ -61,8 +63,12 @@
                     <button id="submitbtn">Submit Review</button>
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <hr>
+                    <div id="resposepoint"></div>
+                </td>
+            </tr>
         </table>
-        <hr>
-        <div id="resposepoint"></div>
     </body>
 </html>
