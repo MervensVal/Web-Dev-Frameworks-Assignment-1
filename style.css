@@ -30,8 +30,17 @@
     background-color: #4CFF33;
     border-radius: 5px;
     height: 40px;
+    border-color: #4CFF33;;
 }
+#submitbtn:hover {
+    background-color: #2E8B57;
+  }
+
 #averageLable{
     color:#4169E1;
     font-family: Verdana, sans-serif;
+}
+
+#resposepoint{
+    text-align: center;
 }

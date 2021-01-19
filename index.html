@@ -4,16 +4,14 @@
         <script src=".dist/index.js" defer></script>
     </head>
     <body>
-        <template>
-            <h4 id="outputnamelabel">
+        <template id="template">
                 Name: <span id="outputname"></span> 
-            </h4>
-            <div>
+                <br/>
+                <br/>
                 <span id="outputrating"></span> 
-            </div>
-            <div>
+                <br/>
+                <br/>
                 <textarea name="" id="outputcomment" cols="40" rows="5" readonly></textarea>
-            </div>
         </template>
         <div class="topcontainer">
             <img src="images/noke shoes.jpg" alt="nike shoes" id="shoeimage">
@@ -31,23 +29,18 @@
         <hr>
         <table id="reviewtable">
             <tr>
-                <td><input type="text" id="name" width="100%" placeholder="Name"></td>
+                <td>Name: </br><input type="text" id="reviewername" width="100%"></td>
             </tr>
             <tr>
                 <td>
+                    Comment: <br/>
                     <textarea name="" id="comment" cols="40" rows="5" placeholder="Add a Comment" maxlength="100"></textarea>
                 </td>
             </tr>
             <tr>
                 <td>
-                    Rating:
-                    <select id="selectbox">
-                        <option id="1star">1 Star &#9733</option>
-                        <option id="2star">2 Star &#9733 &#9733</option>
-                        <option id="3star">3 Star &#9733 &#9733 &#9733</option>
-                        <option id="4star">4 Star &#9733 &#9733 &#9733 &#9733</option>
-                        <option id="5star">5 Star &#9733 &#9733 &#9733 &#9733 &#9733</option>   
-                    </select>
+                    Rating: <br/>
+                    <input type="number" id="rating">
                 </td>
             </tr>
             <tr>
@@ -57,6 +50,9 @@
                 </td>
             </tr>
         </table>
-        <hr>
+        <hr/>
+        <div id="resposepoint">
+
+        </div>
     </body>
 </html>
