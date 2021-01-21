@@ -5,23 +5,36 @@
     </head>
     <body>
         <template id="template">
-            <div class="bold">Name:</div> <span id="outputname" ></span> 
-            <div class="bold">Comment:</div> <span id="outputcomment" ></span>
-            <div class="bold">Rating:</div> <span id="outputrating" ></span>
-            <div class="bold">Date Comment Posted:</div> <span id="currentdate"></span>
-            <hr>
+            <table id="templatetable" border="1" width="70%">
+                <tr>
+                   <td> <div><b>Name: </b><span id="outputname" ></span></div></td>
+                </tr>
+                <tr>
+                    <td><div><b>Comment: </b> <span id="outputcomment" ></span></div></td>
+                </tr>
+                <tr>
+                    <td><div><b>Rating: </b><span id="outputrating" ></span></div></td>
+                </tr>
+                <tr>
+                    <td><div><b>Date Comment Posted: </b><span id="currentdate"></span></div></td>
+                </tr>
+                <br/>
+                <br/>
+            </table>
         </template>
         <br/>
-        <table id="reviewtable" width="50%">
+        <table id="reviewtable" width="70%">
         <tr>
             <td>
-                <h1 id="title">Nike Air Max Shoes</h1>
+                <h1 id="title">Nike Air Max</h1>
             </td>
         </tr>
         <tr>
-            <td>
+            <td style="width:50%">
                 <img src="images/noke shoes.jpg" alt="nike shoes" id="shoeimage">
+                <br/>
                 <small>Image Source: unsplash.com </small>
+                <br/>
                 <small>Photograper: Hermes Rivera</small>
             </td>
             <td>
@@ -40,20 +53,22 @@
             </td>
         </tr>
             <tr>
-                <small id="blankfielderror"></small>
-                <td>Name: </br>
-                <input type="text" id="reviewername" width="100%" maxlength="30"></td>
-            </tr>
-            <tr>
+                <td>
+                    <small id="blankfielderror"></small>
+                    Name: </br>
+                    <input type="text" id="reviewername" width="100%" maxlength="40">
+                    </td>
                 <td>
                     Comment: <br/>
-                    <input type="text" id="comment" width="100%" maxlength="30"></td>
+                    <input type="text" id="comment" width="100%" maxlength="50"></td>
                 </td>
+
             </tr>
             <tr>
                 <td>
                     Rating: <br/>
                     <input type="number" id="rating" min="1" max="5">
+                    <br/>
                     <small id="ratingerror"><small>
                 </td>
             </tr>
@@ -63,12 +78,8 @@
                     <button id="submitbtn">Submit Review</button>
                 </td>
             </tr>
-            <tr>
-                <td>
-                    <hr>
-                    <div id="resposepoint"></div>
-                </td>
-            </tr>
         </table>
+        <hr>
+        <div id="resposepoint"></div>
     </body>
 </html>
